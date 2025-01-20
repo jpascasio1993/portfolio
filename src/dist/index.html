@@ -640,8 +640,11 @@
         </div>
 
         <div class="content">
-          <p>An Android SMS application to manage incoming SMS data from the proprietary client app. 
-            The application serves as an alternative gateway for transmitting or updating user data when an internet connection is unavailable.</p>
+          <p>An Android SMS application that functions as an alternative gateway, running in the background to handle incoming SMS data 
+            from a proprietary client app that is offline or without internet access. The application processes the received SMS data 
+            and forwards it to the server. It utilizes a separate FlutterNativeView integrated with RxJava to maintain a persistent 
+            headless service. Through PlatformChannel, the app manages a task queue and executes Dart tasks at specified intervals for each task.
+          </p>
           <a href="https://github.com/jpascasio1993/sms_sender">Link to github repo</a>
           </br>
         </br>
